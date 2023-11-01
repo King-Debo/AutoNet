@@ -40,3 +40,11 @@ You can install them using pip or conda commands. For example:
 ```bash
 pip install torchmeta deap autoPyTorch optuna pytorch_lightning torchmetrics tkinter torchvision
 
+## Requirements
+
+AutoNet requires the following data and resources to work properly:
+
+- A dataset that contains input data and labels for your task and domain. The dataset should be in a pandas dataframe or a numpy array format.
+- A meta-learning dataset that matches your task and domain of interest. The meta-learning dataset should be one of the following: Omniglot, MiniImagenet, CIFARFS, or FC100.
+- A meta-learning model that matches your task and domain of interest. The meta-learning model should be one of the following: MetaConv2d, MetaLinear, MetaSequential, or MetaModule.
+- A validation set or a test set to measure the performance of the final neural network using appropriate metrics.
